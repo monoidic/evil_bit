@@ -4,12 +4,10 @@
 #include <linux/ip.h>
 #include <linux/in.h>
 #include <linux/if_ether.h>
+#include <linux/pkt_cls.h>
 
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>
-
-#define TC_ACT_OK 0
-#define TC_ACT_SHOT 2
 
 static const int l3_off = L3_OFF;
 static const int l3_len = sizeof(struct iphdr);
