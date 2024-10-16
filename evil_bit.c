@@ -11,8 +11,8 @@
 #define TC_ACT_OK 0
 #define TC_ACT_SHOT 2
 
-const int l3_off = L3_OFF;
-const int l3_len = sizeof(struct iphdr);
+static const int l3_off = L3_OFF;
+static const int l3_len = sizeof(struct iphdr);
 
 static int set_evil_bit(struct __sk_buff *skb);
 
