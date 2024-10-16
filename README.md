@@ -3,7 +3,7 @@ This is a basic BPF program to help pentesters comply with [RFC3514](https://dat
 
 Only ethernet and layer 3 tunnels are currently supported.
 
-Note that this may make certain online resources which have traffic with the evil bit set inaccessible.
+Note that this may make certain online resources which block traffic with the evil bit set inaccessible.
 
 ## Requirements
 Dependencies include `clang`, `make`, `iproute2`, and `sed`.
